@@ -1,0 +1,43 @@
+﻿<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive-900">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" style="background-image: url('img/menu-blur.jpg');background-size: cover;">
+    <ion-content>
+    <div class="spacer" style="width: 268px; height: 37px;"></div>
+    <div>
+        <img src="img/ionic.png" style="display: block; width: 40%; margin-left: auto; margin-right: auto;">
+    </div>
+    <h3 style="color:#000000;font-weight:600;text-align:center;">SensePoint</h3>
+    <div class="spacer" style="width: 268px; height: 37px;"></div>
+      <ion-list>
+        <ion-item menu-close href="#/app/home" class="item-icon-left dark" style="margin-left:5px">
+          <i class="icon ion-ios-home"></i>Home
+        </ion-item>
+        <ion-item menu-close href="#/app/logs" class="item-icon-left" style="margin-left:5px">
+          <i class="icon ion-ios-paper"></i>Logs
+        </ion-item>
+        <ion-item menu-close href="#/app/codex" class="item-icon-left" style="margin-left:5px">
+          <i class="icon ion-ios-book"></i>Codex
+        </ion-item>
+        <ion-item menu-close href="#/app/about" class="item-icon-left" style="margin-left:5px">
+          <i class="icon ion-ios-information"></i>About
+        </ion-item>
+        <ion-item menu-close href="#/app/help" class="item-icon-left" style="margin-left:5px">
+          <i class="icon ion-help-circled"></i>Help
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

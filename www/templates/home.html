@@ -1,0 +1,55 @@
+﻿<ion-view view-title="Home">
+  <ion-content style="background-image: url('img/Blue polygonal background.jpg');background-size: cover;">
+  <!--Gauge-->
+  	<div style="margin-top:40px; display: block;text-align:center;">
+          
+                <ng-gauge 
+                  size="300" 
+                  type="arch" 
+                  thick="10" 
+                  used="240"
+                  total="1000" 
+                  cap="round" 
+                  label="Gas Concentration" 
+                  append="PPM"  
+                  foreground-color="rgba(0, 150, 136, 1)" 
+                  background-color="rgba(0, 0, 0, 0.1)"
+                  duration="600">
+                </ng-gauge>
+     </div>
+
+    <!--Descriptions-->
+  <div class="container" ng-controller="HomeCtrl" style="margin-top:-40px;padding:5px;">
+
+        <div class="card" style="box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">
+            <div class="item item-text-wrap item-icon-left positive">
+            <i class="icon ion-ios-calendar"></i>
+              <b>Date: {{date | date:'longDate'}}</b>
+            </div>
+        </div>
+
+        <div class="card" style="box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">
+          <div class="item item-text-wrap item-icon-left positive">
+              <i class="icon ion-ios-time"></i>
+                <b>Time: {{date | date:'mediumTime'}}</b>
+          </div>
+        </div>
+
+    <div class="card" style="box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">
+      <div class="item item-text-wrap item-icon-left balanced">
+            <i class="icon ion-checkmark-circled"></i><b>Normal Concentration: 240 PPM</b>
+      </div>
+    </div>
+
+    <div class="card" style="box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">
+      <div class="item item-text-wrap item-icon-left assertive">
+        <i class="icon ion-alert-circled"></i><b>Threshold Limit: 700 PPM</b>
+      </div>
+    </div>
+
+  </div>
+
+  </ion-content>
+</ion-view>
+
+
